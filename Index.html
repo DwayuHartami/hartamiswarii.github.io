@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+<style type="text/css">
+	#Header img{
+			width: 100%;
+		}
+		#menu {
+			background-color:BurlyWood;
+
+		}
+		#menu ul { 
+			list-style-type:none;
+			padding:0 ;
+
+		}
+		#menu Li {
+			float: left ;
+
+		}
+		#menu li a { 
+			color: brown ;
+			padding: 10px 10px;
+			text- text-decoration: none ;
+		}
+		#Sidebar { 
+				width: 20%; 
+				background-color: #DEB887;
+				vertical-align: top;
+		}
+		#Content img { 
+				width: 300px;
+				height: 300px;
+				float: left;
+		}
+		#Content p { 
+				text-align: justify;
+				padding-right: 10px;
+				padding-left: 5px;
+		}
+		#Footer {
+				width: 100%;
+				height: 70x;
+				background-color:darkblue;
+
+		}
+		#Footer p {
+				text-align: center;
+				color: black; 
+
+		}
+</style>
+</head>
+<body>
+	<table border="1" cellspacing="0" width="100%">
+		<tr> 
+		<td id="Header" colspan="2">
+			<img src="FOTO/coverr.png">
+		</td>
+		<tr/> 
+		<tr> 
+			<td id="menu" colspan=" 2">
+				<nav> 
+					<ul><b>
+					<li><a href="index.html" > HOME (BIODATA DIRI) </a></li>
+					<li><a href="foto.html">PENGALAMAN ORGANISASI </a></li>
+					<li><a href="Video.html">VIDEO   </a></li>
+					<li><a href ="https://www.instagram.com/dwayuhartamii/?hl=id"> SOSMED </a></li>
+				<b></ul>
+			</nav>
+		</td>
+		</tr>
+		<tr>
+			<td id="Content">
+				<h2 id="nama">I Dewa Ayu Putu Hartami Indraswari</h2>
+				<button onclick="GantiNama()">GantiNama</button>
+				<button onclick="hidefoto()">Ganti Foto</button>
+				<img id="foto" src="FOTO/wayuu.jpeg">
+				<P id= "par"> Hallo, Berikut Biodata Pribadi : Nama lengkap saya I Dewa Ayu Putu Hartami Indraswari, Nama panggilan Dwayu atau Hartami, Tempat Tanggal Lahir Denpasar 1 Februari 2004, Alamat Jln. Pusparesti Br. Cemenggon Penarungan Mengwi Badung, jenis Kelamin Perempuan, Agama Hindu, Kewarganegaraan Indonesia, Hobi Memasak, status belum menikah, Tinggi Badan 155 cm, Berat Badan 53 kg. Biodata Pendidikan saya: TK Dwi Jaya Marga tahun (2009-2010), SD Negeri 3 Penarungan tahun (2010- 2016), SMP Negeri 1 Mengwi tahun (2016-2019), SMK Dwijendra Denpasar tahun (2019-2022) dan hingga saat ini kuliah di Universitas Udayana Prodi D3 Perpustakaan dari Tahun 2022 (Semester 4). Di Website ini saya akan membagikan beberapa pengalaman organisasi saya menjadi Mahasiswa Aktif di Fakultas Ilmu Sosial Dan Ilmu Politik Universitas Udayana. Yuk Ikuti Keseruannya!!!
+				</p>
+			<audio autoplay controls> 
+				<source src="LAGU/photograph.mp3" type="audio/mpeg">	
+				</audio>
+
+
+			</td>
+		</tr>
+		<tr> 
+			<td colspan="2" id="footer">
+			<p>&copy; 2024 By Dwayu Hartami</p>
+			<p>Contact:</p>
+			<p>Email: dwayuhartami124@gmail.com</p>
+			<p>Social Media: <a href="https://www.instagram.com/dwayuhartamii/?hl=id"> Instagram</p>
+			</td>
+		</tr>
+</body>
+</html>
+<script type="text/javascript">
+	function GantiNama() {
+		document.getElementById("nama"). innerHTML= 'Dwayu Hartami'
+	}
+	function hidefoto() { 
+		document.getElementById("foto").src='FOTO/fotohide.jpeg'
+	}
+</script>
